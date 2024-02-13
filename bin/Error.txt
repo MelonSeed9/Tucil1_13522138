@@ -1,0 +1,35 @@
+11469 WARNING: Execution of 'set_exe_build_timestamp' failed on attempt #1 / 20: Exception("Unable to access file 'C:\\Andi\\4\\Stima\\Tucil1_13522138\\bin\\dist\\Main.exe': [Errno 22] Invalid argument: 'C:\\\\Andi\\\\4\\\\Stima\\\\Tucil1_13522138\\\\bin\\\\dist\\\\Main.exe'"). Retrying in 0.05 second(s)...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\__main__.py", line 232, in <module>
+    run()
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\__main__.py", line 212, in run
+    run_build(pyi_config, spec_file, **vars(args))
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\__main__.py", line 69, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\building\build_main.py", line 1091, in main
+    build(specfile, distpath, workpath, clean_build)
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\building\build_main.py", line 1031, in build
+    exec(code, spec_namespace)
+  File "C:\Andi\4\Stima\Tucil1_13522138\bin\Main.spec", line 18, in <module>
+    exe = EXE(
+          ^^^^
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\building\api.py", line 628, in __init__
+    self.__postinit__()
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\building\datastruct.py", line 184, in __postinit__
+    self.assemble()
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\building\api.py", line 825, in assemble
+    self._retry_operation(winutils.set_exe_build_timestamp, build_name, build_timestamp)
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\building\api.py", line 1003, in _retry_operation
+    return func(*args)
+           ^^^^^^^^^^^
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\utils\win32\winutils.py", line 56, in set_exe_build_timestamp
+    with pefile.PE(exe_path, fast_load=True) as pe:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pefile.py", line 2895, in __init__
+    self.__parse__(name, data, fast_load)
+  File "C:\Users\marub\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pefile.py", line 2970, in __parse__
+    stat = os.stat(fname)
+           ^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Andi\\4\\Stima\\Tucil1_13522138\\bin\\dist\\Main.exe'
