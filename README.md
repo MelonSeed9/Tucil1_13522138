@@ -24,6 +24,7 @@ Ada 2 jenis input :
 
 2. Dari CLI / Terminal
   Isi lah input sesuai dengan instruksi program
+
 Setelah input berhasil, program akan langsung memberikan output
 
 
